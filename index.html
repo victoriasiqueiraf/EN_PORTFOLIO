@@ -519,6 +519,8 @@ const FMT = {
   emb:   { label: 'Packaging', size: '', ar: null },
   ident: { label: 'Identity', size: '', ar: null },
   logo:  { label: 'Logo', size: '', ar: null },
+  manual:{ label: 'Brand book', size: '1400×1100', ar: '14/11' },
+  adesivo:{ label: 'Vehicle wrap', size: '', ar: null },
   caso:  { label: 'Case study', size: '3840×2160', ar: '16/9' },
 };
 
@@ -673,6 +675,31 @@ const THEMES = [
     desc: 'Trabalhos que vão além do feed: identidade visual, embalagem, estampas, peças de roupa e modelagem 3D.',
     tags: ['Identidade visual', 'Embalagem', 'Estampa', 'Merch', 'Logotipo', 'Modelagem 3D'],
     projects: [
+      { name: 'Cora', client: 'Artisan brownies · brand identity', desc: 'Identity for a brownie brand with an official taster: Cora, a little dog caught in the act with a piece in her paw. Hand-drawn line, chubby lettering and a palette that steers away from brown, with one colour per flavour on the label. Full brand book, from logo to applications.',
+        items: [
+          ['cora/01_capa', 'Cover', 'manual'],
+          ['cora/02_conceito', 'Concept', 'manual'],
+          ['cora/03_versoes', 'Logo versions', 'manual'],
+          ['cora/04_respiro', 'Clear space', 'manual'],
+          ['cora/05_cores', 'Colours', 'manual'],
+          ['cora/06_combinacoes', 'Combinations', 'manual'],
+          ['cora/07_usos-incorretos', 'Incorrect use', 'manual'],
+          ['cora/08_tipografia', 'Typography', 'manual'],
+          ['cora/09_elementos', 'Graphic elements', 'manual'],
+          ['cora/10_etiquetas', 'Flavour labels', 'manual'],
+          ['cora/11_mockup-etiquetas', 'Label on the packaging', 'manual'],
+          ['cora/12_caixa-post', 'Box and post', 'manual'],
+          ['cora/13_cartao', 'Thank-you card', 'manual'],
+          ['cora/14_obrigada', 'Thank you', 'manual'],
+        ] },
+      { name: 'Açayba', client: 'Açaí · machine wrap', otherLabel: 'Wrap pieces', desc: 'Full wrap for an açaí vending machine, under the line "O poder da Amazônia" (the power of the Amazon). Purple background with layered palm leaves, gold lines running across the pieces and the bowl-and-berries seal. Every piece was sized to the machine.',
+        items: [
+          ['acayba/painel-frontal', 'Front panel · 1500 × 660 mm', 'adesivo', '1920/845'],
+          ['acayba/frente-maquina', 'Machine front · 540 × 686 mm', 'adesivo', '1400/1778'],
+          ['acayba/placa-redonda', 'Round sign · 600 mm', 'adesivo', '1/1'],
+          ['acayba/painel-superior', 'Top panel · 1444 × 255 mm', 'adesivo', '1920/339'],
+          ['acayba/visao-geral', 'All pieces', 'adesivo', '1920/1283'],
+        ] },
       { name: 'Hoax', client: 'Agency · merch', desc: 'Ecobag "Creative Soul", camiseta com grade de mandalas geométricas e boné bordado. Mockup e fotos da coleção.',
         items: [
           ['hoax-bag-mockup', 'Creative Soul tote bag · mockup', 'mockup'],
@@ -829,7 +856,7 @@ const pad = n => String(n).padStart(2, '0');
 const DESTAQUE = {
   eventos: ['Samba do Barcha', 'Ginga Recife', 'Beerchef'],
   digital: ['KOVA'],
-  marca: ['Nutriz Food', 'Fresh Coolra', 'Hoax', 'iFood table display'],
+  marca: ['Cora', 'Nutriz Food', 'Açayba', 'Fresh Coolra', 'Hoax', 'iFood table display'],
   gastronomia: ['Akira', 'Lucinha Cascão', 'Xerém Marisqueira'],
   saude: ['Terranutri', 'Helena Rios Dermatologia', 'Aryanny Feijó', 'Leoncio Sidrim', 'BariUp'],
   editorial: ['Real Fight Club', 'Avante-Gard Magazine'],
